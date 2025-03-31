@@ -30,7 +30,7 @@ This repository demonstrates how to create a Python `range` module using SWIG to
    Run the following command to generate the SWIG wrapper and other related files (range_wrap.c and range.py):  
    ```bash
    swig -python range.i
-4. **Linking and Installing the Module"
+4. **Linking and Installing the Module**
   ```bash
   python setup.py build_ext --inplace
   ```

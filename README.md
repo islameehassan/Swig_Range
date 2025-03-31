@@ -26,12 +26,15 @@ This repository demonstrates how to create a Python `range` module using SWIG to
 
 2. **Clone the repository** (or download the files).  
 
-3. **Generate the Python bindings**:  
-   Run the following command to generate the SWIG wrapper and other related files (range_wrap.c and range.py):  
-   ```bash
-   swig -python range.i
-4. **Linking and Installing the Module**
-  ```bash
-  python setup.py build_ext --inplace
-  ```
+3. Run the following command to compile and generate the shared library:
+```bash
+make
+```
+
+### Using the module
+```python
+import range
+r = range.Range(1, 10)
+print(r.contains(5))  # True
+```
 

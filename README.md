@@ -1,5 +1,5 @@
 # Swig_Range
-This repository demonstrates how to create a Python `range` module using SWIG to expose the C `Range_t` struct and its associated functions.  
+This repository demonstrates how to create a minimal Python `range` module using SWIG to expose the C `Range_t` struct and its associated functions.  
 
 ### API  
 - **`Range(start, end)`** – Creates a new `Range` object.  
@@ -11,7 +11,6 @@ This repository demonstrates how to create a Python `range` module using SWIG to
 - **`Range.equals(range, other)`** – Returns `True` if `range` and `other` are equal.  
 - **`Range.intersection(range, other)`** – Returns a new `Range` representing the intersection of `range` and `other`.  
 - **`Range.union(range, other)`** – Returns a new `Range` representing the union of `range` and `other`.
-- 
 ### Installation Instructions  
 
 1. **Install SWIG** (if not already installed):  
